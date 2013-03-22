@@ -78,7 +78,7 @@ public abstract class CLArgs {
 					string);
 		} catch (NoSuchMethodException | IllegalAccessException
 				| IllegalArgumentException | InvocationTargetException e) {
-			e.printStackTrace();
+			log(e.getMessage());
 		}
 		return value;
 	}
@@ -117,6 +117,10 @@ public abstract class CLArgs {
 
 	private String capitalize(String string) {
 		return Character.toUpperCase(string.charAt(0)) + string.substring(1);
+	}
+
+	public static void log(Object object) {
+		System.out.println(object);
 	}
 
 	@Override
