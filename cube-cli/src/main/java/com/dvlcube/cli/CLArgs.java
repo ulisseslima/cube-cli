@@ -14,8 +14,8 @@ import java.util.Queue;
 /**
  * Parses command line args (Unix style).
  * <p>
- * Will populate any class that extends it with the parsed command line args
- * values.
+ * Will populate any class that extends it with the parsed command line
+ * arguments values.
  * <p>
  * The class that extends it should not have primitive types.
  * <p>
